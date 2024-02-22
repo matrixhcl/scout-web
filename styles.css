@@ -1,0 +1,130 @@
+/* CSS stylesheet */
+/* @see https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
+/* Global Styles */
+/* CSS is all about styling HTML elements. */
+/* CSS usually start with a selector, which is the HTML element you want to style. */
+/* The selector limits the application of the style to the specified element. */
+/* Common selectors include: */
+/* - Tag name (e.g. body, h1, p) */
+/* - Class (e.g. .my-class) */
+/* - ID (e.g. #my-id) */
+/* - Attribute (e.g. [type="text"]) */
+/* - Pseudo-class (e.g. :hover) */
+
+/* The selector is followed by a declaration block. */
+/* the curly braces contain the declaration block, which is a list of declarations separated by semicolons. */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  background-image: url("background.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+main {
+  padding: 0px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  border-style: solid;
+  border-width: 5px;
+  margin: 2px;
+  padding: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* Contact Form */
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+form button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #23527c;
+}
+
+.display-none {
+    display: none;
+}
+
+/* CSS Animation */
+/* @see https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.absolute {
+    position: absolute;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
