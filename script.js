@@ -1,11 +1,18 @@
 
 
+/* "let" keyword defines a variable in javascript,
+A variable is like a container that holds information or data. It has a name and a value.
+In this case, we are telling the computer that we want to set a variable with name "targetNumber", and its value is zero */
 let targetNumber = 0;
-// Generate a random number between 1 and 100
+
+// A function is a block of code that can be called and executed at any time
+// A reuseable recipe for performing a task
+// This function is for generate a random number between 1 and 100
 function regenerateNumber() {
     targetNumber = Math.floor(Math.random() * 100);
     targetNumber === 0 ? regenerateNumber() : null;
 }
+// Here we call the function to generate a random number
 regenerateNumber()
 // Function to check the user's guess
 function checkGuess() {

@@ -23,6 +23,12 @@ body {
   height: 100vh;
 }
 
+/* the comma (,) is used to separate multiple selectors within a single rule.
+When you use a comma between selectors, it means that you want to apply the same styles to multiple elements.  */
+table, th, tr, td {
+  border: 1px solid;
+}
+
 main {
   padding: 0px;
 }
@@ -41,14 +47,16 @@ h1 {
   padding: 2px;
 }
 
+/* multiple elements without comma,
+the styles defined within the curly braces {} will be applied to all <ul> elements that are descendants of <nav> elements. */
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 10px;
 }
 
